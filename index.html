@@ -454,16 +454,48 @@
         }
         
         .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 16px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1.5rem;
             color: white;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(78, 99, 234, 0.3);
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(78, 99, 234, 0.4);
+        }
+        
+        /* Specific icon colors for different features */
+        .feature-card:nth-child(1) .feature-icon {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        
+        .feature-card:nth-child(2) .feature-icon {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+        }
+        
+        .feature-card:nth-child(3) .feature-icon {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+        }
+        
+        .feature-card:nth-child(4) .feature-icon {
+            background: linear-gradient(135deg, #4ECDC4, #44A08D);
+        }
+        
+        .feature-card:nth-child(5) .feature-icon {
+            background: linear-gradient(135deg, #45B7D1, #96C93D);
+        }
+        
+        .feature-card:nth-child(6) .feature-icon {
+            background: linear-gradient(135deg, #9B59B6, #E74C3C);
         }
         
         .feature-card h3 {
@@ -542,16 +574,40 @@
         }
         
         .ai-feature-icon {
-            width: 64px;
-            height: 64px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            border-radius: 16px;
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 1.5rem;
             color: white;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(78, 99, 234, 0.3);
+            transition: var(--transition);
+        }
+        
+        .ai-feature-card:hover .ai-feature-icon {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(78, 99, 234, 0.4);
+        }
+        
+        /* Specific AI icon colors */
+        .ai-feature-card:nth-child(1) .ai-feature-icon {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+        }
+        
+        .ai-feature-card:nth-child(2) .ai-feature-icon {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+        }
+        
+        .ai-feature-card:nth-child(3) .ai-feature-icon {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+        }
+        
+        .ai-feature-card:nth-child(4) .ai-feature-icon {
+            background: linear-gradient(135deg, #4ECDC4, #44A08D);
         }
         
         .ai-feature-card h3 {
