@@ -784,6 +784,10 @@
         }
         
         .download-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
             text-align: center;
         }
         
@@ -791,6 +795,7 @@
             padding: 20px 40px;
             font-size: 1.1rem;
             font-weight: 700;
+            min-width: 220px;
         }
         
         .download-note {
@@ -1032,12 +1037,12 @@
                 <p>Breakthrough 3-source analysis system combining on-device OCR, cloud Vision AI, and real-time web search with Google's Gemini 2.5 Flash for unparalleled accuracy and intelligent scheduling.</p>
                 <div class="cta-buttons">
                     <a href="https://testflight.apple.com/join/mY5KbHfe" class="btn btn-primary">
-                        <i data-lucide="smartphone"></i>
-                        Join TestFlight Beta
+                        <i data-lucide="apple"></i>
+                        iOS TestFlight Beta
                     </a>
-                    <a href="#features" class="btn btn-secondary">
-                        <i data-lucide="sparkles"></i>
-                        Explore Features
+                    <a href="https://play.google.com/apps/testing/com.scanmymeds.app" class="btn btn-primary">
+                        <i data-lucide="play"></i>
+                        Android Play Store Beta
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -1195,28 +1200,32 @@
     <section id="download" class="download gradient-bg">
         <div class="container">
             <h2>Join the Beta Today</h2>
-            <p>Be among the first to experience the future of medication management</p>
+            <p>Be among the first to experience the future of medication management on iOS and Android</p>
             <div class="download-content">
                 <div class="beta-info">
                     <div class="beta-badge">
                         <i data-lucide="zap"></i>
                         <span>Beta Testing</span>
                     </div>
-                    <h3>TestFlight Beta Available</h3>
-                    <p>Get early access to the revolutionary 3-source hybrid analysis system and help shape the future of medication management. Your feedback drives our innovation.</p>
+                    <h3>Cross-Platform Beta Available</h3>
+                    <p>Get early access to the revolutionary 3-source hybrid analysis system on your preferred platform and help shape the future of medication management. Your feedback drives our innovation.</p>
                     <ul class="beta-features">
                         <li><i data-lucide="check"></i> Full hybrid analysis system</li>
                         <li><i data-lucide="check"></i> 3-source parallel processing</li>
                         <li><i data-lucide="check"></i> Real-time web enhancement</li>
-                        <li><i data-lucide="check"></i> Priority support</li>
+                        <li><i data-lucide="check"></i> Priority support & feedback</li>
                     </ul>
                 </div>
                 <div class="download-buttons">
                     <a href="https://testflight.apple.com/join/mY5KbHfe" class="btn btn-primary btn-large">
-                        <i data-lucide="smartphone"></i>
-                        Join TestFlight Beta
+                        <i data-lucide="apple"></i>
+                        iOS TestFlight Beta
                     </a>
-                    <p class="download-note">iOS TestFlight required • Free to join</p>
+                    <a href="https://play.google.com/apps/testing/com.scanmymeds.app" class="btn btn-primary btn-large">
+                        <i data-lucide="play"></i>
+                        Android Play Store Beta
+                    </a>
+                    <p class="download-note">Available on iOS TestFlight & Android Play Store • Free to join</p>
                 </div>
             </div>
         </div>
